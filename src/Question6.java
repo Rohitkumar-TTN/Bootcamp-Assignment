@@ -1,4 +1,4 @@
- class Bank {
+class Bank {
     private String name;
     private String headofficeAddress;
     private String chairmanName;
@@ -59,71 +59,70 @@
     }
 }
 
-
  class BOI extends Bank {
-     public BOI() {
-         setName("Bank of India");
-         setHeadofficeAddress("Mumbai, Maharashtra");
-         setChairmanName("ABCD");
-         setBranchCount(5000);
-         setFdInterestRate(5.5);
-         setPersonalLoanInterestRate(11.0);
-         setHomeLoanInterestRate(8.0);
-     }
-
-     @Override
-     public String toString() {
-         return "BOI: " + super.toString();
-     }
-
-
-     public class ICICI extends Bank {
-         public ICICI() {
-             setName("ICICI Bank");
-             setHeadofficeAddress("Mumbai, Maharashtra");
-             setChairmanName("EFGH");
-             setBranchCount(5000);
-             setFdInterestRate(6.0);
-             setPersonalLoanInterestRate(9.0);
-             setHomeLoanInterestRate(8.5);
-         }
-
-         @Override
-         public String toString() {
-             return "ICICI: " + super.toString();
-         }
-     }
+    public BOI() {
+        setName("Bank of India");
+        setHeadofficeAddress("Mumbai, Maharashtra");
+        setChairmanName("ABCD");
+        setBranchCount(5000);
+        setFdInterestRate(5.5);
+        setPersonalLoanInterestRate(11.0);
+        setHomeLoanInterestRate(8.0);
+    }
+    @Override
+    public String toString() {
+        return "BOI: " + super.toString();
+    }
+}
 
 
-     class SBI extends Bank {
-         public SBI() {
-             setName("State Bank of India");
-             setHeadofficeAddress("Mumbai, Maharashtra");
-             setChairmanName("XYZ");
-             setBranchCount(22000);
-             setFdInterestRate(5.0);
-             setPersonalLoanInterestRate(10.5);
-             setHomeLoanInterestRate(7.5);
-         }
+ class ICICI extends Bank {
+    public ICICI() {
+        setName("ICICI Bank");
+        setHeadofficeAddress("Mumbai, Maharashtra");
+        setChairmanName("EFGH");
+        setBranchCount(5000);
+        setFdInterestRate(6.0);
+        setPersonalLoanInterestRate(9.0);
+        setHomeLoanInterestRate(8.5);
+    }
+    @Override
+    public String toString() {
+        return "ICICI: " + super.toString();
+    }
+}
 
 
-         @Override
-         public String toString() {
-             return "SBI: " + super.toString();
-         }
-     }
+ class SBI extends Bank {
+    public SBI() {
+        setName("State Bank of India");
+        setHeadofficeAddress("Mumbai, Maharashtra");
+        setChairmanName("XYZ");
+        setBranchCount(22000);
+        setFdInterestRate(5.0);
+        setPersonalLoanInterestRate(10.5);
+        setHomeLoanInterestRate(7.5);
+    }
 
 
-     class Question6 {
-         public static void main(String[] args) {
-             SBI sbi = new SBI();
-             BOI boi = new BOI();
-             ICICI icici = new ICICI();
+    @Override
+    public String toString() {
+        return "SBI: " + super.toString();
+    }
+}
 
 
-             System.out.println(sbi);
-             System.out.println(boi);
-             System.out.println(icici);
-         }
-     }
+
+ class Question {
+    public static void main(String[] args) {
+        SBI sbi = new SBI();
+        BOI boi = new BOI();
+        ICICI icici = new ICICI();
+
+
+        System.out.println(sbi);
+        System.out.println(boi);
+        System.out.println(icici);
+    }
+}
 
