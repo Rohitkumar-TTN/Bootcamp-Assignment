@@ -1,0 +1,4 @@
+Java is a programming language.
+Java is widely used.
+Many developers love it.
+
