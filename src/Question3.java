@@ -17,10 +17,9 @@ class SharedResource {
             System.out.println("Reader Thread: Detected flag change!");
         });
 
-        // Writer Thread (changes flag after some delay)
         Thread writer = new Thread(() -> {
             try {
-                Thread.sleep(2000); // Simulating some delay
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }
